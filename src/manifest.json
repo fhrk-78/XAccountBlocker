@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "X Account Blocker [Alpha]",
+    "version": "0.1.0.1",
+    "default_locale": "ja_JP",
+    "description": "Chrome extension for X",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "http://twitter.com/*", "http://twitter.com/*" ],
+            "js": [ "main.js" ]
+        }
+    ],
+    "homepage_url": "https://misskey.io/@fhrk_"
+}
