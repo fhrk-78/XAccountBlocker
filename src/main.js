@@ -1,5 +1,8 @@
 document.addEventListener('keydown', event => {
-    if (event.ctrlKey + event.code == "Delete") {
+    console.debug("Button presed");
+    if (event.ctrlKey & event.code == "Delete") {
         document.activeElement.remove();
+        console.debug("Deleted");
     }
 });
+console.debug("EventListner added");
